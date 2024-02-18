@@ -10,9 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_REPO_NAME: "/ignite-shop"
+      NEXT_PUBLIC_REPO_NAME: "/ignite-call"
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/ignite-call
       with:
         node-version: 12
     - run: npm install -g yarn
@@ -21,6 +21,6 @@ jobs:
     - run: touch ./out/.nojekyll
 
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4
+      uses: GedioneSOuza/ignite-call
       with:
         folder: out
