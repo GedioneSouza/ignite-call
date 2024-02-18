@@ -1,0 +1,50 @@
+Run yarn build
+yarn run v1.22.21
+$ next build && next export
+warn  - No build cache found. Please configure build caching for faster rebuilds. Read more: https://nextjs.org/docs/messages/no-cache
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+info  - Linting and checking validity of types...
+info  - Creating an optimized production build...
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+info  - Compiled successfully
+info  - Collecting page data...
+info  - Generating static pages (0/5)
+info  - Generating static pages (1/5)
+info  - Generating static pages (2/5)
+info  - Generating static pages (3/5)
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: You did not provide an API key. You need to provide your API key in the Authorization header, using *** (e.g. 'Authorization: ***'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.
+    at res.toJSON.then.StripeAPIError.message (/home/runner/work/ignite-shop/ignite-shop/node_modules/stripe/lib/RequestSender.js:95:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+
+Error occurred prerendering page "/product/prod_NDreZNYL0OaaaY". Read more: https://nextjs.org/docs/messages/prerender-error
+Error: You did not provide an API key. You need to provide your API key in the Authorization header, using *** (e.g. 'Authorization: ***'). See https://stripe.com/docs/api#authentication for details, or we can help at https://support.stripe.com/.
+    at res.toJSON.then.StripeAPIError.message (/home/runner/work/ignite-shop/ignite-shop/node_modules/stripe/lib/RequestSender.js:95:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+info  - Generating static pages (5/5)
+
+> Build error occurred
+Error: Export encountered errors on following paths:
+	/
+	/product/[id]: /product/prod_NDreZNYL0OaaaY
+    at /home/runner/work/ignite-shop/ignite-shop/node_modules/next/dist/export/index.js:409:19
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Span.traceAsyncFn (/home/runner/work/ignite-shop/ignite-shop/node_modules/next/dist/trace/trace.js:79:20)
+    at async /home/runner/work/ignite-shop/ignite-shop/node_modules/next/dist/build/index.js:1398:21
+    at async Span.traceAsyncFn (/home/runner/work/ignite-shop/ignite-shop/node_modules/next/dist/trace/trace.js:79:20)
+    at async /home/runner/work/ignite-shop/ignite-shop/node_modules/next/dist/build/index.js:1258:17
+    at async Span.traceAsyncFn (/home/runner/work/ignite-shop/ignite-shop/node_modules/next/dist/trace/trace.js:79:20)
+    at async Object.build [as default] (/home/runner/work/ignite-shop/ignite-shop/node_modules/next/dist/build/index.js:66:29)
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+Error: Process completed with exit code 1
